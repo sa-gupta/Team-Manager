@@ -7,6 +7,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { AddPlayerComponent } from './components/add-player/add-player.component';
 import { MatchPageComponent } from './components/match-page/match-page.component';
 import { AddMatchComponent } from './components/add-match/add-match.component';
+import { MatchDetailComponent } from './components/match-detail/match-detail.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AddMatchComponent } from './components/add-match/add-match.component';
     HomePageComponent,
     AddPlayerComponent,
     MatchPageComponent,
-    AddMatchComponent
+    AddMatchComponent,
+    MatchDetailComponent
   ],
   imports: [
     BrowserModule,

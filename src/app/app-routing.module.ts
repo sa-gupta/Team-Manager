@@ -1,11 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddMatchComponent } from './components/add-match/add-match.component';
+import { AddPlayerComponent } from './components/add-player/add-player.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { MatchPageComponent } from './components/match-page/match-page.component';
+import { MatchDetailComponent } from './components/match-detail/match-detail.component';
 
 const routes: Routes = [
   {path: "", component: HomePageComponent},
-  {path: "matches", component: MatchPageComponent}
+  {path: "matches", component: MatchPageComponent},
+  {path: "add-player", component: AddPlayerComponent},
+  {path: "add-match", component: AddMatchComponent},
+  {path: "match-detail", component: MatchDetailComponent}
 ];
 
 @NgModule({
