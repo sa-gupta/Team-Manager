@@ -1,35 +1,21 @@
 <div class="container">
     <div class="row match-score">
-        <p>Real Madrid 3 - 5 Barcelona</p>
+        <p>{{team[0]}}&nbsp; &nbsp;{{ score[0]}} &nbsp;&nbsp;- &nbsp;&nbsp;{{score[1]}} &nbsp;&nbsp;{{team[1]}}</p>
     </div>
     <div class="row match-details">
-        <div class="row match-date mt-3"><p>23-10-2021 , 5:45 PM</p></div>
-        <div class="row match-loc"><p>At Stamford Bridge, London</p></div>
-        <div class="row match-result"><p>Lost by 2 Goals</p></div>
+        <div class="row match-date mt-3"><p>{{match.datetime}}</p></div>
+        <div class="row match-loc"><p>{{match.place}}</p></div>
+        <div class="row match-result"><p>{{resultString}}</p></div>
     </div>
     <div class="row players-title">
         <p>Players</p>
     </div>
     <div class="row">
         <div class="col">
-        <div class="row player-name">
-            <p class="my-auto py-1"> 07 | Christiano Ronaldo</p>
+        <div class="row player-name my-3" *ngFor="let p of match.players">
+            <p class="my-auto py-1"> {{p.jerseyNumber}} &nbsp; | &nbsp; {{p.firstName}} &nbsp; {{p.lastname}}</p>
         </div>
-        <div class="row player-name mt-2">
-            <p class="my-auto py-1"> 07 | Christiano Ronaldo</p>
-        </div>
-        <div class="row player-name mt-2">
-            <p class="my-auto py-1"> 07 | Christiano Ronaldo</p>
-        </div>
-        <div class="row player-name mt-2">
-            <p class="my-auto py-1"> 07 | Christiano Ronaldo</p>
-        </div>
-        <div class="row player-name mt-2">
-            <p class="my-auto py-1"> 07 | Christiano Ronaldo</p>
-        </div>
-        <div class="row player-name mt-2">
-            <p class="my-auto py-1"> 07 | Christiano Ronaldo</p>
-        </div>
+        
     </div>
     </div>
 

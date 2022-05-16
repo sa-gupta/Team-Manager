@@ -19,3 +19,13 @@
 .btn{
     width: 200px;
 }
+.my-select{
+    width: 70%;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.jersey-number{
+    width: 70%;
+    border-radius: 25px;
+}

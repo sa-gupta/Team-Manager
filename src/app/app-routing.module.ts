@@ -9,9 +9,9 @@ import { MatchDetailComponent } from './components/match-detail/match-detail.com
 const routes: Routes = [
   {path: "", component: HomePageComponent},
   {path: "matches", component: MatchPageComponent},
-  {path: "add-player", component: AddPlayerComponent},
-  {path: "add-match", component: AddMatchComponent},
-  {path: "match-detail", component: MatchDetailComponent}
+  {path: "register", component: AddPlayerComponent},
+  {path: "add", component: AddMatchComponent},
+  {path: "match-detail/:id", component: MatchDetailComponent}
 ];
 
 @NgModule({
